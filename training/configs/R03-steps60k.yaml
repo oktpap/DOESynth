@@ -1,0 +1,30 @@
+batch: 16
+data:
+  modes:
+    independent: 1
+  photos_dir: data/coco2017/val2017  # COCO val2017, путь от папки training/
+  weights:
+    blobs: 0.8
+    code: 0.6
+    dots: 0.7
+    gradient: 0.4
+    lines: 1.0
+    noise: 0.6
+    photo: 3.9846153846153847
+    shapes: 1.0
+    text: 1.5
+    texture: 0.8
+image_power: 2
+log_every: 200
+lr: 0.001
+model: unet
+model_kwargs:
+  base: 32
+  depth: 4
+name: R03-steps60k
+out: runs
+seed: 0
+steps: 60000
+val_every: 1000
+weight_decay: 0.0001
+workers: 12

@@ -1,0 +1,11 @@
+# Зависимости решения (Python 3.12). PyTorch — сборка для CPU с индекса PyTorch:
+# работает на любой машине, в том числе в Docker на Apple Silicon (linux/arm64).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0+cpu
+numpy==2.5.4
+pillow==13.0.0
+scikit-image==0.26.0
+scipy==1.18.1
+fastapi==0.162.2
+uvicorn==0.54.0
+python-multipart==0.0.33

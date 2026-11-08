@@ -1,0 +1,15 @@
+**/__pycache__
+**/*.pyc
+.git
+.venv
+data
+docs
+training/runs
+*.md
+!README.md
+benchmark/results.json
+start.bat
+start.sh
+stop.bat
+stop.sh
+docker-compose.yml

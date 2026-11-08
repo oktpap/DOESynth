@@ -1,0 +1,10 @@
+# Обучение (нужен GPU с CUDA; веса решения обучены на RTX 5070, PyTorch 2.15 + CUDA 13.2).
+# Для другой видеокарты поставьте сборку PyTorch под свою CUDA: https://pytorch.org/get-started/
+torch==2.15.0
+numpy==2.5.4
+pillow==13.0.0
+scikit-image==0.26.0
+scipy==1.18.1
+pyyaml>=6.0
+matplotlib>=3.10
+tensorboard>=2.19

@@ -1,0 +1,28 @@
+batch: 16
+crosstalk: 0.0
+crosstalk_end: null
+data:
+  modes:
+    volume: 1
+  volume:
+    supersample: 2
+grad_clip: null
+image_power: 2
+log_every: 50
+loss: planes
+lr: 0.001
+model: cghnet
+model_kwargs:
+  base: 32
+  depth: 4
+name: R08-planes_clean
+noise: 0.0
+noise_target: true
+out: runs
+seed: 0
+steps: 20000
+val_every: 500
+val_objects: 16
+val_supersample: 2
+weight_decay: 0.0001
+workers: 12

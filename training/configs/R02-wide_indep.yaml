@@ -1,0 +1,19 @@
+batch: 16
+data:
+  modes:
+    independent: 1
+  photos_dir: data/coco2017/val2017  # COCO val2017, путь от папки training/
+image_power: 2
+log_every: 50
+lr: 0.001
+model: unet
+model_kwargs:
+  base: 32
+  depth: 4
+name: R02-wide_indep
+out: runs
+seed: 0
+steps: 20000
+val_every: 500
+weight_decay: 0.0001
+workers: 12

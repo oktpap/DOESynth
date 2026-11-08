@@ -1,0 +1,14 @@
+line-length = 100
+src = ["."]
+# Код обучения — из репозитория экспериментов команды (изменено только имя пакета)
+extend-exclude = ["training/doetrain", "training/experiments"]
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]  # кириллица и греческие буквы в строках и комментариях
+
+[lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.File", "fastapi.Form"]
+
+[lint.isort]
+known-first-party = ["doesynth"]

@@ -1,0 +1,10 @@
+services:
+  doe:
+    build: .
+    image: doesynth:1.0
+    container_name: doesynth
+    ports:
+      - "${DOE_PORT:-8000}:8000"
+    volumes:
+      - ./data:/data  # папка для пакетной обработки из командной строки
+    restart: unless-stopped
